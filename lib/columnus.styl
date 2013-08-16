@@ -1,0 +1,69 @@
+// THE AE GRID
+// ===========
+
+// Based on the 12 column nestable Foundation Grid:
+// http://foundation.zurb.com/docs/components/grid.html
+// -----------------------------------------------------------------------------
+
+// Imports
+// -------
+
+@import 'nib'
+@import 'lib'
+
+// Functions
+// ---------
+
+grid(class = 'small', colums = 12)
+
+  // Iterate through our columns
+  for colCount in (1..12)
+
+    // Convert each column count to a percentage: i.e. 1/12
+    percentWidth = 1% * ((colCount / 12) * 100)
+
+    // Column class for the width
+    .l_{class}_{colCount}
+      width percentWidth
+
+// Styles
+// ------
+
+.l_grid_wrap,
+.l_grid
+  overflow hidden
+
+.l_grid
+  list-style none
+  margin 0 -5px
+  clearfix()
+
+  *
+    box-sizing border-box
+
+.l_column
+  float left
+  position relative
+  padding 0 5px 10px
+
+  &.centered
+    float none
+    margin 0 auto
+
+  img
+    max-width 100%
+    height auto
+    -ms-interpolation-mode bicubic
+
+.grid_link
+  display block
+
+grid()
+
+@media q_small
+
+  grid('med')
+
+@media q_medium
+
+  grid('large')
