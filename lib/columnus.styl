@@ -8,8 +8,8 @@
 // Imports
 // -------
 
+// Requires nib, unless you would rather handle the vendor prefixes yourself
 @import 'nib'
-@import 'lib'
 
 // Functions
 // ---------
@@ -60,10 +60,10 @@ grid(class = 'small', colums = 12)
 
 grid()
 
-@media q_small
+@media '(min-width: 768px)'
 
   grid('med')
 
-@media q_medium
+@media '(min-width: 768px)'
 
   grid('large')
