@@ -1,4 +1,4 @@
-// THE AE GRID
+// Columnus
 // ===========
 
 // Based on the 12 column nestable Foundation Grid:
@@ -9,18 +9,18 @@
 // -------
 
 // Requires nib, unless you would rather handle the vendor prefixes yourself
-@import 'nib'
+// @import 'nib'
 
 // Functions
 // ---------
 
-grid(class = 'small', colums = 12)
+grid(class = 'small', columns = 12)
 
   // Iterate through our columns
-  for colCount in (1..12)
+  for colCount in (1 .. columns)
 
     // Convert each column count to a percentage: i.e. 1/12
-    percentWidth = 1% * ((colCount / 12) * 100)
+    percentWidth = 1% * ((colCount / columns) * 100)
 
     // Column class for the width
     .l_{class}_{colCount}
@@ -35,7 +35,7 @@ grid(class = 'small', colums = 12)
 
 .l_grid
   list-style none
-  margin 0 -5px
+  margin 0 -1em
   clearfix()
 
   *
@@ -44,19 +44,12 @@ grid(class = 'small', colums = 12)
 .l_column
   float left
   position relative
-  padding 0 5px 10px
-
-  &.centered
-    float none
-    margin 0 auto
+  padding 0 1em 2em
 
   img
     max-width 100%
     height auto
     -ms-interpolation-mode bicubic
-
-.grid_link
-  display block
 
 grid()
 
