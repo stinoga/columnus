@@ -11,10 +11,10 @@ In the example below, you'll get two columns at your smallest breakpoint, three 
 
 ```html
 <div class="l_grid">
-  <div class="small_2 med_3 large_4 l_column">...</div>
-  <div class="small_2 med_3 large_4 l_column">...</div>
-  <div class="small_2 med_3 large_4 l_column">...</div>
-  <div class="small_2 med_3 large_4 l_column">...</div>
+  <div class="small_6 med_3 large_3 l_column">...</div>
+  <div class="small_6 med_3 large_3 l_column">...</div>
+  <div class="small_6 med_3 large_3 l_column">...</div>
+  <div class="small_6 med_3 large_3 l_column">...</div>
 </div>
 ```
 
