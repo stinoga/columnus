@@ -5,7 +5,13 @@ Stylus responsive grid system based loosely off of the Foundation 12-column grid
 
 ##Usage
 
-Columnus uses predefined html classes setup in the stylus file. Each number is based off of a twelve column grid system, similar to that of Foundation. Read more [here](http://foundation.zurb.com/docs/components/grid.html).
+Add the columnus stylus file to your codebase, and import it into any stylus file you'd like to use the grid:
+
+```sass
+@import 'columnus'
+```
+
+Columnus uses predefined html classes setup in the stylus file. Each number is based off of a twelve column grid system, similar to that of Foundation.
 
 In the example below, you'll get two columns at your smallest breakpoint, three at your medium one, and 4 at your largest:
 
@@ -20,4 +26,4 @@ In the example below, you'll get two columns at your smallest breakpoint, three 
 
 Note: This uses the layout class naming, taken from [SMACSS](http://smacss.com/).
 
-Special thanks to the Foundation crew. Their code rocks, and was the inspiration for this simple grid system.
+Special thanks to the Foundation crew. Their code rocks, and was the inspiration for this simple grid system. Read more on the Foundation grid [here](http://foundation.zurb.com/docs/components/grid.html).
